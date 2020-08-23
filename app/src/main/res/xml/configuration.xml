@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:key="command theme configuration"
+        app:title="@string/theme_configuration" />
+    <SwitchPreference
+        app:defaultValue="false"
+        app:key="auto scan"
+        app:title="@string/auto_scan" />
+    <EditTextPreference
+        android:inputType="number"
+        app:defaultValue="60"
+        app:dependency="auto scan"
+        app:key="auto scan minutes"
+        app:title="@string/every_minutes"
+        app:useSimpleSummaryProvider="true" />
+    <SwitchPreference
+        app:defaultValue="false"
+        app:dependency="auto scan"
+        app:key="no change notification"
+        app:title="@string/no_change_notification" />
+</PreferenceScreen>

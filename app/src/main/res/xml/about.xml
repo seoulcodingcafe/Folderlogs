@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:key="command about"
+        app:title="@string/about" />
+    <Preference
+        app:key="command license"
+        app:title="@string/license" />
+    <Preference
+        app:key="command version"
+        app:title="@string/version" />
+    <PreferenceCategory app:title="@string/debug">
+        <Preference
+            app:key="log start time-stamp"
+            app:title="@string/log_start_time_stamp" />
+    </PreferenceCategory>
+</PreferenceScreen>
